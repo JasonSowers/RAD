@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="RAD_Web_APIContext-Web.config Connection String" description="RAD_Web_APIContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=localhost; Initial Catalog=LIXRegionAvailabilityU01; Integrated Security=True; MultipleActiveResultSets=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\workspace\\Git\\RAD\ Web\ API\\RAD\ Web\ API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='RAD_Web_APIContext']/@connectionString" />
+  </parameter>
+</parameters>

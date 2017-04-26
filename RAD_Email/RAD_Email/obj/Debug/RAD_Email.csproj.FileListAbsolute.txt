@@ -1,0 +1,6 @@
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\RAD_Email\bin\Debug\RAD_Email.dll.config
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\RAD_Email\bin\Debug\RAD_Email.dll
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\RAD_Email\bin\Debug\RAD_Email.pdb
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\RAD_Email\obj\Debug\RAD_Email.dll
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\RAD_Email\obj\Debug\RAD_Email.pdb
+C:\Users\jassow\documents\visual studio 2013\Projects\RAD_Email\RAD_Email\obj\Debug\RAD_Email.csprojResolveAssemblyReference.cache

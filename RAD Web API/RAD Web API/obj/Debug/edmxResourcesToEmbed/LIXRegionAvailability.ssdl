@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LIXRegionAvailabilityU01Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CLStatus">
+    <Key>
+      <PropertyRef Name="index" />
+    </Key>
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Last updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="HistoryID" />
+    </Key>
+    <Property Name="HistoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Action" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IACErrors">
+    <Key>
+      <PropertyRef Name="index" />
+    </Key>
+    <Property Name="index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="RegionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegionDate" Type="datetime" Nullable="false" />
+    <Property Name="TimeUntilDown" Type="int" Nullable="false" />
+    <Property Name="EstimatedTimeDown" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="SettingID" />
+    </Key>
+    <Property Name="SettingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HideRegions" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Function Name="usp_UpdateStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="status" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="LIXRegionAvailabilityU01ModelStoreContainer">
+    <EntitySet Name="CLStatus" EntityType="Self.CLStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="History" EntityType="Self.History" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IACErrors" EntityType="Self.IACErrors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Regions" EntityType="Self.Regions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Settings" EntityType="Self.Settings" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

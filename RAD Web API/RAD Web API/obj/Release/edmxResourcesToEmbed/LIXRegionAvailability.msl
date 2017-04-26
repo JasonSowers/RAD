@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LIXRegionAvailabilityU01ModelStoreContainer" CdmEntityContainer="LIXRegionAvailability">
+    <EntitySetMapping Name="Histories">
+      <EntityTypeMapping TypeName="LIXRegionAvailabilityU01Model.History">
+        <MappingFragment StoreEntitySet="History">
+          <ScalarProperty Name="HistoryID" ColumnName="HistoryID" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="LIXRegionAvailabilityU01Model.Region">
+        <MappingFragment StoreEntitySet="Regions">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RegionDate" ColumnName="RegionDate" />
+          <ScalarProperty Name="TimeUntilDown" ColumnName="TimeUntilDown" />
+          <ScalarProperty Name="EstimatedTimeDown" ColumnName="EstimatedTimeDown" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="LIXRegionAvailabilityU01Model.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="HideRegions" ColumnName="HideRegions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLStatus">
+      <EntityTypeMapping TypeName="LIXRegionAvailabilityU01Model.CLStatu">
+        <MappingFragment StoreEntitySet="CLStatus">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="index" ColumnName="index" />
+          <ScalarProperty Name="Last_updated" ColumnName="Last updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IACErrors">
+      <EntityTypeMapping TypeName="LIXRegionAvailabilityU01Model.IACError">
+        <MappingFragment StoreEntitySet="IACErrors">
+          <ScalarProperty Name="index" ColumnName="index" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_UpdateStatus" FunctionName="LIXRegionAvailabilityU01Model.Store.usp_UpdateStatus" />
+  </EntityContainerMapping>
+</Mapping>

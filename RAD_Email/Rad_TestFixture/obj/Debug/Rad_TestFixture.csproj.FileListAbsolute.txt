@@ -1,0 +1,9 @@
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\bin\Debug\Rad_TestFixture.dll
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\bin\Debug\Rad_TestFixture.pdb
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\bin\Debug\nunit.framework.dll
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\bin\Debug\RAD_Email.dll
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\bin\Debug\RAD_Email.pdb
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\bin\Debug\nunit.framework.xml
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\obj\Debug\Rad_TestFixture.csprojResolveAssemblyReference.cache
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\obj\Debug\Rad_TestFixture.dll
+c:\users\jassow\documents\visual studio 2013\Projects\RAD_Email\Rad_TestFixture\obj\Debug\Rad_TestFixture.pdb
