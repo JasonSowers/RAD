@@ -17,11 +17,11 @@ namespace RAD_Email
             {
                 MailMessage email = new MailMessage(new MailAddress("CASHLINK-do-not-reply@symetra.com"), new MailAddress("jason.sowers@symetra.com"));
                 
-                //email.To.Add(new MailAddress("jason.sowers@symetra.com"));
-//                email.To.Add(new MailAddress("debra.anderson@symetra.com"));
-                email.CC.Add("debra.anderson@symetra.com");
-                email.Bcc.Add("3179089630@mms.att.net");
-                email.Bcc.Add("6306311568@mms.att.net");
+                //email.To.Add(new MailAddress("email@something.com"));
+//                email.To.Add(new MailAddress("de.ders@tr.com"));
+                email.CC.Add("1@2.com");
+                email.Bcc.Add("email@something.com");
+                email.Bcc.Add("1111111111@mms.att.net");
                 StringBuilder msg = new StringBuilder("");
                 msg.Append("\r\n");
                 msg.Append("test");
