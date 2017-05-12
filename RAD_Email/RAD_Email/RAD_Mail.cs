@@ -27,7 +27,7 @@ namespace RAD_Email
                 msg.Append("test");
                 email.Body = msg.ToString();
 
-                SmtpClient smtp = new SmtpClient {Host = "smtp.corp.symetra.com"};
+                SmtpClient smtp = new SmtpClient {Host = "smtp.something.com"};
                 smtp.Send(email);
             }
             catch (Exception ex)
